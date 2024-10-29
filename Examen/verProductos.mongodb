@@ -1,0 +1,3 @@
+use("supermercado");
+
+db.productos.find()

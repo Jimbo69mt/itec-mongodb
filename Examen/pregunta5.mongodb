@@ -1,0 +1,5 @@
+use("supermercado");
+
+db.productos.find({
+    stock: { $gte: 10, $lte: 30 }
+  })

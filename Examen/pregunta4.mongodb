@@ -1,0 +1,12 @@
+use("supermercado");
+
+db.productos.updateMany(
+    {
+        fecha_vencimiento: new Date(2024, 10, 30)
+    },
+    {
+        $set: {
+            oferta: true
+        }
+    }
+)
