@@ -1,0 +1,3 @@
+use("supermercado");
+
+db.productos.find({fecha_vencimiento: new Date(2024, 10, 30)})

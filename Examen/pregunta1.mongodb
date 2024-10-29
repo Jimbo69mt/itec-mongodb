@@ -1,0 +1,79 @@
+use("supermercado");
+
+db.productos.drop()
+
+db.productos.insertMany([
+    {
+        _id:1,
+        nombre: "Yogurt Natural",
+        categoria: "Lácteos",
+        fecha_elaboracion: new Date(2024,9,02),
+        fecha_vencimiento: new Date(2024,11,15),
+        stock: 54
+    },
+    {
+        _id: 2,
+        nombre: "Salami Italiano", 
+        categoria: "Embutidos",
+        fecha_elaboracion: new Date(2024,9,07),
+        fecha_vencimiento: new Date(2024,10,20),
+        stock: 32
+    },
+    {
+        _id: 3,
+        nombre: "Lechuga Romana",
+        categoria: "Verduras",
+        fecha_elaboracion: new Date(2024,9,10),
+        fecha_vencimiento: new Date(2024,10,28),
+        stock: 65
+    },
+    {
+        _id: 4,
+        nombre: "Plátano Maduro",
+        categoria: "Frutas",
+        fecha_elaboracion: new Date(2024,9,05),
+        fecha_vencimiento: new Date(2024,11,1),
+        stock: 47
+    },
+    {
+        _id: 5,
+        nombre: "Queso Gouda",
+        categoria: "Lácteos",
+        fecha_elaboracion: new Date(2024,9,08),
+        fecha_vencimiento: new Date(2024,11,05),
+        stock: 82
+    },
+    {
+        _id: 6,
+        nombre: "Chorizo Español",
+        categoria: "Embutidos" ,
+        fecha_elaboracion: new Date(2024,9,15),
+        fecha_vencimiento: new Date(2024,10,25),
+        stock: 73
+    },
+    {
+        _id: 7,
+        nombre: "Tomate Cherry",
+        categoria: "Verduras" ,
+        fecha_elaboracion: new Date(2024,9,01),
+        fecha_vencimiento: new Date(2024,10,15),
+        stock: 22
+    },
+    {
+        _id: 8,
+        nombre: "Manzana Verde",
+        categoria: "Frutas",
+        fecha_elaboracion: new Date(2024,9,03),
+        fecha_vencimiento: new Date(2024,11,18),
+        stock: 90
+    },
+    {
+        _id: 9,
+        nombre: "Mantequilla",
+        categoria: "Lácteos",
+        fecha_elaboracion: new Date(2024,9,12),
+        fecha_vencimiento: new Date(2024,10,30),
+        stock: 45
+
+    }
+])
